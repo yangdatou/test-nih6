@@ -14,6 +14,9 @@ from pyscf import scf
 from pyscf import tdscf
 from pyscf import gto, scf
 
+from pyscf.mcscf import CASSCF
+from pyscf.mcscf import CASCI
+
 ni_basis = """
 #BASIS SET: (5s,5p,5d) -> [3s,3p,2d]
 Ni    S
@@ -42,7 +45,6 @@ def get_r_ene(r, dr_max=0.1):
     npts = 21
     dr_list = numpy.linspace(-dr_max, dr_max, npts)
 
-    atm_list = []
     e_r_list = []
     e_u0_list = []
     e_u1_list = []
@@ -65,7 +67,9 @@ def get_r_ene(r, dr_max=0.1):
         H     0.0000000    {-rxy: 10.7f}     0.0000000
         H    {-rxy: 10.7f}     0.0000000     0.0000000
         '''
-        atm_list.append(atoms)
+
+        with open(f'r{r:6.4f}-dr{dr:6.4f}.xyz', 'w') as f:
+            f.write(atoms)
 
         mol = gto.Mole()
         mol.verbose = 0
@@ -105,13 +109,13 @@ def get_r_ene(r, dr_max=0.1):
         print(ncas)
         print(nele)
 
-        mycas = mf.CASCI(ncas, nele)
+        mycas = CASCI(mf, ncas, nele)
         mycas.verbose = 4
         mo = mycas.sort_mo(mo_list)
         mycas.kernel(mo)
         e_casci_list.append(mycas.e_tot)
 
-        mycas = mf.CASSCF(ncas, nele)
+        mycas = CASSCF(mf, ncas, nele)
         mycas.verbose = 4
         mo = mycas.sort_mo(mo_list)
         mycas.kernel(mo)
@@ -145,7 +149,9 @@ def get_r_ene(r, dr_max=0.1):
     e_casscf_list = numpy.asarray(e_casscf_list)
     e_casci_list = numpy.asarray(e_casci_list)
 
-    data = numpy.vstack((dr_list, e_r_list, e_u0_list, e_u1_list, e_casscf_list, e_casci_list)).reshape(-1, npts)
+    data = numpy.vstack(
+      (dr_list, e_r_list, e_u0_list, e_u1_list, e_casscf_list, e_casci_list)
+    ).reshape(-1, npts)
     numpy.savetxt(f"./data/r-{r:6.4f}.dat", data, fmt="%4.2f %12.8f %12.8f %12.8f %12.8f %12.8f")
 
 get_r_ene(1.4, dr_max=0.1)
