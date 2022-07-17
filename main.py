@@ -71,8 +71,9 @@ def get_r_ene(r, dr_max=0.1):
 
         ni_3d_idx = mol.search_ao_label("Ni 3d")
         tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx])
-        mo_list = numpy.where(tmp > 1e-2)
+        mo_list = numpy.where(tmp > 1e-1)[0]
 
+        print(numpy.sort(tmp))
         print(mo_list)
 
         assert 1 == 2
@@ -126,3 +127,5 @@ def get_r_ene(r, dr_max=0.1):
     e_u1_list = numpy.asarray(e_u1_list)
 
     return dr_list, e_r_list, e_u0_list, e_u1_list
+
+get_r_ene(1.4, dr_max=0.1)
