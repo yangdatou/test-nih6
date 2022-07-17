@@ -91,7 +91,7 @@ def get_r_ene(r, dr_max=0.1):
         nmo = len(mf.mo_occ)
 
         ww = numpy.einsum("mp,mn->pn", mo, sqrtm(ovlp))
-        w2 = ww ** 2
+        w2 = ww * ww.conj()
 
         ni_3d_idx = mol.search_ao_label("Ni 3d")
         tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx])
@@ -99,8 +99,6 @@ def get_r_ene(r, dr_max=0.1):
 
         print(numpy.sort(tmp))
         print(mo_list)
-
-        assert 1 == 2
 
         # ncas = len(mo_list)
         # nele = int(sum(mf.mo_occ[mo_list]))
