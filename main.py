@@ -68,12 +68,12 @@ def get_r_ene(r, dr_max=0.1):
         H    {-rxy: 10.7f}     0.0000000     0.0000000
         '''
 
-        with open(f'r{r:6.4f}-dr{dr:6.4f}.xyz', 'w') as f:
+        with open(f'./xyz/r_{r:6.4f}-dr_{dr:6.4f}.xyz', 'w') as f:
             f.write(atoms)
 
         mol = gto.Mole()
         mol.verbose = 0
-        mol.output = f"./log/r{r:6.4f}-dr{dr:6.4f}.log"
+        mol.output = f"./log/r_{r:6.4f}-dr_{dr:6.4f}.log"
         mol.atom = atoms
         mol.basis = {"H": "sto3g", 'Ni': ni_basis}
         mol.ecp = {'Ni': "lanl2dz"}
@@ -152,6 +152,6 @@ def get_r_ene(r, dr_max=0.1):
     data = numpy.vstack(
       (dr_list, e_r_list, e_u0_list, e_u1_list, e_casscf_list, e_casci_list)
     ).reshape(-1, npts)
-    numpy.savetxt(f"./data/r-{r:6.4f}.dat", data, fmt="%4.2f %12.8f %12.8f %12.8f %12.8f %12.8f")
+    numpy.savetxt(f"./data/r_{r:6.4f}.dat", data, fmt="%4.2f %12.8f %12.8f %12.8f %12.8f %12.8f")
 
 get_r_ene(1.4, dr_max=0.1)
