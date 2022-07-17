@@ -152,6 +152,6 @@ def get_r_ene(r, dr_max=0.1):
     data = numpy.vstack(
       (dr_list, e_r_list, e_u0_list, e_u1_list, e_casscf_list, e_casci_list)
     ).reshape(-1, npts)
-    numpy.savetxt(f"./data/r_{r:6.4f}.dat", data, fmt="%12.8f", delimiter=", ")
+    numpy.savetxt(f"./data/r_{r:6.4f}.dat", data.T, fmt="%12.8f", delimiter=", ")
 
 get_r_ene(1.4, dr_max=0.1)
