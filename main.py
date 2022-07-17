@@ -14,6 +14,30 @@ from pyscf import scf
 from pyscf import tdscf
 from pyscf import gto, scf
 
+ni_basis = """
+#BASIS SET: (5s,5p,5d) -> [3s,3p,2d]
+Ni    S
+      7.6200000             -0.4082550              0.1872591        
+      2.2940000              0.7455308             -0.3966964        
+      0.8760000              0.5325721             -0.4954003        
+      0.1153000              0.0000000              1.0844343        
+Ni    S
+      0.0396000              1.0000000        
+Ni    P
+     23.6600000             -0.0481558        
+      2.8930000              0.6258473        
+      0.9435000              0.4715158        
+Ni    P
+      0.0840000              1.0000000        
+Ni    P
+      0.0240000              1.0000000        
+Ni    D
+     42.7200000              0.0372699        
+     11.7600000              0.1956103        
+      3.8170000              0.4561273        
+      1.1690000              0.5621587          
+"""
+
 def get_r_ene(r, dr_max=0.1):
     dr_list = numpy.linspace(-dr_max, dr_max, 21)
 
@@ -44,9 +68,9 @@ def get_r_ene(r, dr_max=0.1):
 
         mol = gto.Mole()
         mol.verbose = 0
-        mol.output = f"./log/{r}-{dr}-0.log"
+        mol.output = f"./log/r{r:6.4f}-dr{dr:6.4f}.log"
         mol.atom = atoms
-        mol.basis = {"H": "sto3g", 'Ni': "lanl2dz"}
+        mol.basis = {"H": "sto3g", 'Ni': ni_basis}
         mol.ecp = {'Ni': "lanl2dz"}
         mol.symmetry = 0
         mol.charge = -4
