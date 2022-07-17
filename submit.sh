@@ -25,4 +25,7 @@ export PYSCF_TMPDIR=/scratch/global/yangjunjie/${SLURM_JOB_NAME}/$SLURM_JOBID/
 
 mkdir -p $PYSCF_TMPDIR
 
+rm ./data/*
+rm ./xyz/*
+rm ./log/*
 python main.py
