@@ -39,7 +39,8 @@ Ni    D
 """
 
 def get_r_ene(r, dr_max=0.1):
-    dr_list = numpy.linspace(-dr_max, dr_max, 21)
+    npts = 21
+    dr_list = numpy.linspace(-dr_max, dr_max, npts)
 
     atm_list = []
     e_r_list = []
@@ -84,8 +85,6 @@ def get_r_ene(r, dr_max=0.1):
         dm0_rhf = mf.make_rdm1()
         e_r_list.append(mf.e_tot)
 
-        assert mf.converged
-
         ovlp = mf.get_ovlp()
         mo = mf.mo_coeff
         nmo = len(mf.mo_occ)
@@ -100,23 +99,23 @@ def get_r_ene(r, dr_max=0.1):
         print(numpy.sort(tmp))
         print(mo_list)
 
-        # ncas = len(mo_list)
-        # nele = int(sum(mf.mo_occ[mo_list]))
+        ncas = len(mo_list)
+        nele = int(sum(mf.mo_occ[mo_list]))
 
-        # print(ncas)
-        # print(nele)
+        print(ncas)
+        print(nele)
 
-        # mycas = mf.CASCI(ncas, nele)
-        # mycas.verbose = 4
-        # mo = mycas.sort_mo(mo_list)
-        # mycas.kernel(mo)
-        # e_casci_list.append(mycas.e_tot)
+        mycas = mf.CASCI(ncas, nele)
+        mycas.verbose = 4
+        mo = mycas.sort_mo(mo_list)
+        mycas.kernel(mo)
+        e_casci_list.append(mycas.e_tot)
 
-        # mycas = mf.CASSCF(ncas, nele)
-        # mycas.verbose = 4
-        # mo = mycas.sort_mo(mo_list)
-        # mycas.kernel(mo)
-        # e_casscf_list.append(mycas.e_tot)
+        mycas = mf.CASSCF(ncas, nele)
+        mycas.verbose = 4
+        mo = mycas.sort_mo(mo_list)
+        mycas.kernel(mo)
+        e_casscf_list.append(mycas.e_tot)
 
         mf = scf.UHF(mol)
         mf.max_cycle = 1000
@@ -125,8 +124,6 @@ def get_r_ene(r, dr_max=0.1):
         mf.kernel(dm0=dm0_u0hf)
         dm0_u0hf = mf.make_rdm1()
         e_u0_list.append(mf.e_tot)
-
-        assert mf.converged
 
         mol.spin = 2
         mol.build()
@@ -139,15 +136,16 @@ def get_r_ene(r, dr_max=0.1):
         dm0_u1hf = mf.make_rdm1()
         e_u1_list.append(mf.e_tot)
 
-        assert mf.converged
-
         print(f"\ndr = {dr: 4.2f}, dr = {dr: 4.2f}")
         print(f"erhf = {e_r_list[-1]: 8.6f}, eu0hf = {e_u0_list[-1]: 8.6f}, eu1hf = {e_u1_list[-1]: 8.6f}")
 
     e_r_list = numpy.asarray(e_r_list)
     e_u0_list = numpy.asarray(e_u0_list)
     e_u1_list = numpy.asarray(e_u1_list)
+    e_casscf_list = numpy.asarray(e_casscf_list)
+    e_casci_list = numpy.asarray(e_casci_list)
 
-    return dr_list, e_r_list, e_u0_list, e_u1_list
+    data = numpy.vstack((dr_list, e_r_list, e_u0_list, e_u1_list, e_casscf_list, e_casci_list)).reshape(-1, npts)
+    numpy.savetxt(f"./data/r-{r:6.4f}.dat", data, fmt="%4.2f %12.8f %12.8f %12.8f %12.8f %12.8f")
 
 get_r_ene(1.4, dr_max=0.1)
