@@ -1,0 +1,132 @@
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 10
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 1000
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410939/tmpxeenro02
+max_memory 4000 MB (current use 107 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -169.746164600327
+  HOMO = 0.465647335440032  LUMO = 0.550058181849075
+cycle= 1 E= -169.745534391308  delta_E= 0.00063  |g|= 0.00439  |ddm|= 0.036
+  HOMO = 0.465634779692728  LUMO = 0.550094560009468
+cycle= 2 E= -169.745547691787  delta_E= -1.33e-05  |g|= 0.00227  |ddm|= 0.0117
+  HOMO = 0.465592670950909  LUMO = 0.550090368532052
+cycle= 3 E= -169.745551774344  delta_E= -4.08e-06  |g|= 0.00157  |ddm|= 0.00584
+  HOMO = 0.465599660680411  LUMO = 0.550144162487245
+cycle= 4 E= -169.745554070047  delta_E= -2.3e-06  |g|= 0.000543  |ddm|= 0.00472
+  HOMO = 0.465586467510801  LUMO = 0.550159725737713
+cycle= 5 E= -169.74555457501  delta_E= -5.05e-07  |g|= 0.000127  |ddm|= 0.0029
+  HOMO = 0.465587411881056  LUMO = 0.550159557556938
+cycle= 6 E= -169.74555460397  delta_E= -2.9e-08  |g|= 2.03e-05  |ddm|= 0.00129
+  HOMO = 0.465587746188225  LUMO = 0.55015965765941
+cycle= 7 E= -169.745554608741  delta_E= -4.77e-09  |g|= 1.86e-05  |ddm|= 0.000781
+  HOMO = 0.465587800394665  LUMO = 0.550159483719225
+cycle= 8 E= -169.74555461443  delta_E= -5.69e-09  |g|= 1.86e-05  |ddm|= 0.000954
+  HOMO = 0.465587808400205  LUMO = 0.550159505554855
+cycle= 9 E= -169.745554612466  delta_E= 1.96e-09  |g|= 1.85e-05  |ddm|= 0.000329
+  HOMO = 0.465587806501247  LUMO = 0.550159498164007
+cycle= 10 E= -169.745554612883  delta_E= -4.18e-10  |g|= 1.86e-05  |ddm|= 7.01e-05
+  HOMO = 0.465587784717441  LUMO = 0.550159451546136
+Extra cycle  E= -169.745554616379  delta_E= -3.5e-09  |g|= 1.87e-05  |ddm|= 0.000585
+converged SCF energy = -169.745554616379
+
+
+******** <class 'pyscf.scf.uhf.UHF'> ********
+method = UHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 10
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 1000
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410939/tmph7x9kl_v
+max_memory 4000 MB (current use 107 MB)
+number electrons alpha = 14  beta = 14
+Set gradient conv threshold to 3.16228e-05
+init E= -169.612432662742
+  alpha nocc = 14  HOMO = 0.409490443141601  LUMO = 0.492204270248649
+  beta  nocc = 14  HOMO = 0.409490442339383  LUMO = 0.492204270110126
+cycle= 1 E= -169.61183438498  delta_E= 0.000598  |g|= 0.00283  |ddm|= 0.0248
+  alpha nocc = 14  HOMO = 0.408839771851729  LUMO = 0.491419259426375
+  beta  nocc = 14  HOMO = 0.408839771145042  LUMO = 0.491419259303145
+cycle= 2 E= -169.611843246026  delta_E= -8.86e-06  |g|= 0.00124  |ddm|= 0.00567
+  alpha nocc = 14  HOMO = 0.408860039245928  LUMO = 0.491421184147895
+  beta  nocc = 14  HOMO = 0.408860038612779  LUMO = 0.491421184037164
+cycle= 3 E= -169.611845423385  delta_E= -2.18e-06  |g|= 0.000681  |ddm|= 0.00218
+  alpha nocc = 14  HOMO = 0.408867634076575  LUMO = 0.491409114281904
+  beta  nocc = 14  HOMO = 0.408867633572152  LUMO = 0.491409114193668
+cycle= 4 E= -169.611846494164  delta_E= -1.07e-06  |g|= 0.000122  |ddm|= 0.00239
+  alpha nocc = 14  HOMO = 0.40886449336705  LUMO = 0.491408232062865
+  beta  nocc = 14  HOMO = 0.408864492945147  LUMO = 0.491408231989329
+cycle= 5 E= -169.611846541782  delta_E= -4.76e-08  |g|= 3.13e-05  |ddm|= 0.000941
+  alpha nocc = 14  HOMO = 0.408864454058349  LUMO = 0.491407887993567
+  beta  nocc = 14  HOMO = 0.408864453679114  LUMO = 0.491407887927654
+cycle= 6 E= -169.611846564551  delta_E= -2.28e-08  |g|= 4.13e-05  |ddm|= 0.000854
+  alpha nocc = 14  HOMO = 0.408864420127876  LUMO = 0.491407733059966
+  beta  nocc = 14  HOMO = 0.408864419679167  LUMO = 0.491407732981758
+cycle= 7 E= -169.611846517521  delta_E= 4.7e-08  |g|= 6.6e-06  |ddm|= 0.00279
+  alpha nocc = 14  HOMO = 0.408864498191469  LUMO = 0.491407696197829
+  beta  nocc = 14  HOMO = 0.4088644978189  LUMO = 0.491407696133276
+cycle= 8 E= -169.611846517322  delta_E= 1.99e-10  |g|= 3.6e-06  |ddm|= 0.000296
+  alpha nocc = 14  HOMO = 0.408864462386959  LUMO = 0.491407714651171
+  beta  nocc = 14  HOMO = 0.408864462056124  LUMO = 0.491407714594012
+Extra cycle  E= -169.611846517584  delta_E= -2.62e-10  |g|= 4.64e-06  |ddm|= 9.43e-05
+converged SCF energy = -169.611846517584  <S^2> = 2.9391533e-08  2S+1 = 1.0000001
+
+
+******** <class 'pyscf.scf.uhf.UHF'> ********
+method = UHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 10
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 1000
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410939/tmpu8ben9xl
+max_memory 4000 MB (current use 107 MB)
+number electrons alpha = 15  beta = 13
+Set gradient conv threshold to 3.16228e-05
+init E= -169.729676345696
+  alpha nocc = 15  HOMO = 0.399212551018253  LUMO = 0.596520375531224
+  beta  nocc = 13  HOMO = 0.41673991928126  LUMO = 0.518743726356407
+cycle= 1 E= -169.728711834028  delta_E= 0.000965  |g|= 0.00276  |ddm|= 0.0254
+  alpha nocc = 15  HOMO = 0.398469693347041  LUMO = 0.595268584605441
+  beta  nocc = 13  HOMO = 0.416000151402853  LUMO = 0.518141780240752
+cycle= 2 E= -169.728720622426  delta_E= -8.79e-06  |g|= 0.00121  |ddm|= 0.00518
+  alpha nocc = 15  HOMO = 0.398467330543415  LUMO = 0.595965442280963
+  beta  nocc = 13  HOMO = 0.415999696910285  LUMO = 0.518164953603135
+cycle= 3 E= -169.728722885625  delta_E= -2.26e-06  |g|= 0.000681  |ddm|= 0.00228
+  alpha nocc = 15  HOMO = 0.39845369826596  LUMO = 0.596127754293535
+  beta  nocc = 13  HOMO = 0.41598742911318  LUMO = 0.518171932281332
+cycle= 4 E= -169.728723878124  delta_E= -9.92e-07  |g|= 0.000126  |ddm|= 0.00218
+  alpha nocc = 15  HOMO = 0.398453791355812  LUMO = 0.596147469171022
+  beta  nocc = 13  HOMO = 0.415987225775362  LUMO = 0.518169369839969
+cycle= 5 E= -169.728723913343  delta_E= -3.52e-08  |g|= 1.95e-05  |ddm|= 0.000471
+  alpha nocc = 15  HOMO = 0.398453216599378  LUMO = 0.596144573896441
+  beta  nocc = 13  HOMO = 0.415986447717766  LUMO = 0.518169167565082
+cycle= 6 E= -169.728723914304  delta_E= -9.61e-10  |g|= 1.21e-05  |ddm|= 6.21e-05
+  alpha nocc = 15  HOMO = 0.398453287242819  LUMO = 0.59614416822616
+  beta  nocc = 13  HOMO = 0.415986488584787  LUMO = 0.518169185667378
+Extra cycle  E= -169.728723914605  delta_E= -3.01e-10  |g|= 9.91e-06  |ddm|= 2.35e-05
+converged SCF energy = -169.728723914605  <S^2> = 3.001184  2S+1 = 3.606208
