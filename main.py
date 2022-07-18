@@ -96,7 +96,8 @@ def get_r_ene(r, dr_max=0.1):
         ww = numpy.einsum("mp,mn->pn", mo, sqrtm(ovlp))
         w2 = ww * ww.conj()
 
-        ni_3d_idx = mol.search_ao_label("Ni dx2-y2 dz2")
+        ni_3d_idx  = mol.search_ao_label("Ni dx2-y2")
+        ni_3d_idx += mol.search_ao_label("Ni dz2") 
         print("ni_3d_idx = ", ni_3d_idx)
         assert 1 == 2
 
