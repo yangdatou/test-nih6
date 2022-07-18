@@ -13,30 +13,30 @@ SCF conv_tol_grad = None
 SCF max_cycles = 1000
 direct_scf = True
 direct_scf_tol = 1e-13
-chkfile to save SCF result = /scratch/global/yangjunjie/test/410944/tmpk14i55xm
-max_memory 4000 MB (current use 551 MB)
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410946/tmpgf1r4yhm
+max_memory 4000 MB (current use 584 MB)
 Set gradient conv threshold to 3.16228e-05
-init E= -169.731715043298
-  HOMO = 0.461934177153385  LUMO = 0.549420442496338
-cycle= 1 E= -169.727926824381  delta_E= 0.00379  |g|= 0.00478  |ddm|= 0.0395
-  HOMO = 0.462273559491239  LUMO = 0.549726607390615
-cycle= 2 E= -169.727941859203  delta_E= -1.5e-05  |g|= 0.00272  |ddm|= 0.0148
-  HOMO = 0.462205060858378  LUMO = 0.549640551855863
-cycle= 3 E= -169.727945920377  delta_E= -4.06e-06  |g|= 0.00148  |ddm|= 0.00562
-  HOMO = 0.462195295881017  LUMO = 0.549619059197505
-cycle= 4 E= -169.727948284969  delta_E= -2.36e-06  |g|= 0.000482  |ddm|= 0.006
-  HOMO = 0.46218850509384  LUMO = 0.549604777850867
-cycle= 5 E= -169.727948616805  delta_E= -3.32e-07  |g|= 0.000115  |ddm|= 0.00214
-  HOMO = 0.462190827344578  LUMO = 0.549605442387603
-cycle= 6 E= -169.727948633793  delta_E= -1.7e-08  |g|= 7.34e-06  |ddm|= 0.000575
-  HOMO = 0.462190437625641  LUMO = 0.549605191665185
-cycle= 7 E= -169.727948633905  delta_E= -1.13e-10  |g|= 2.98e-06  |ddm|= 8.86e-05
-  HOMO = 0.462190387419199  LUMO = 0.549605174634418
-Extra cycle  E= -169.727948633958  delta_E= -5.24e-11  |g|= 2.46e-06  |ddm|= 6.75e-05
-converged SCF energy = -169.727948633958
+init E= -169.731715041284
+  HOMO = 0.46193417944654  LUMO = 0.549420440582577
+cycle= 1 E= -169.727926822361  delta_E= 0.00379  |g|= 0.00478  |ddm|= 0.0395
+  HOMO = 0.462273561833274  LUMO = 0.549726605407936
+cycle= 2 E= -169.727941857144  delta_E= -1.5e-05  |g|= 0.00272  |ddm|= 0.0148
+  HOMO = 0.462205063238527  LUMO = 0.549640549846444
+cycle= 3 E= -169.727945918283  delta_E= -4.06e-06  |g|= 0.00148  |ddm|= 0.00562
+  HOMO = 0.462195298341761  LUMO = 0.549619057111147
+cycle= 4 E= -169.727948282811  delta_E= -2.36e-06  |g|= 0.000482  |ddm|= 0.006
+  HOMO = 0.462188507633161  LUMO = 0.549604775691728
+cycle= 5 E= -169.727948614571  delta_E= -3.32e-07  |g|= 0.000115  |ddm|= 0.00214
+  HOMO = 0.462190829970313  LUMO = 0.549605440155397
+cycle= 6 E= -169.727948631477  delta_E= -1.69e-08  |g|= 7.03e-06  |ddm|= 0.000562
+  HOMO = 0.462190440286306  LUMO = 0.54960518937468
+cycle= 7 E= -169.727948631533  delta_E= -5.6e-11  |g|= 2.08e-06  |ddm|= 3.46e-05
+  HOMO = 0.462190390145877  LUMO = 0.549605172311412
+Extra cycle  E= -169.727948631539  delta_E= -5.49e-12  |g|= 1.18e-06  |ddm|= 8.68e-06
+converged SCF energy = -169.727948631539
 
 ******** CASCI flags ********
-CAS (5e+5e, 7o), ncore = 9, nvir = 7
+CAS (6e+6e, 10o), ncore = 8, nvir = 5
 natorb = False
 canonicalization = True
 sorting_mo_energy = False
@@ -52,13 +52,14 @@ max_memory 4000 MB
 nroots = 1
 pspace_size = 400
 spin = None
-Density matrix diagonal elements [1.99965367e+00 1.99658497e+00 1.99633984e+00 1.99168502e+00
- 1.99964417e+00 5.57061724e-04 1.55352769e-02]
+Density matrix diagonal elements [1.99855204e+00 1.99929852e+00 1.99814338e+00 1.99798660e+00
+ 1.99163055e+00 1.99960995e+00 1.66890077e-04 5.35542972e-04
+ 1.38237798e-02 2.52742418e-04]
 CASCI converged
-CASCI E = -169.733010148148  E(CI) = -25.3305852090933  S^2 = 0.0000000
+CASCI E = -169.737489477401  E(CI) = -47.152859415109  S^2 = 0.0000000
 
 ******** <class 'pyscf.mcscf.mc1step.CASSCF'> ********
-CAS (5e+5e, 7o), ncore = 9, nvir = 7
+CAS (6e+6e, 10o), ncore = 8, nvir = 5
 max_cycle_macro = 50
 max_cycle_micro = 4
 conv_tol = 1e-07
@@ -81,8 +82,8 @@ natorb = False
 canonicalization = True
 sorting_mo_energy = False
 ao2mo_level = 2
-chkfile = /scratch/global/yangjunjie/test/410944/tmpk14i55xm
-max_memory 4000 MB (current use 552 MB)
+chkfile = /scratch/global/yangjunjie/test/410946/tmpgf1r4yhm
+max_memory 4000 MB (current use 580 MB)
 internal_rotation = False
 ******** <class 'pyscf.fci.direct_spin1.FCISolver'> ********
 max. cycles = 50
@@ -95,114 +96,114 @@ max_memory 4000 MB
 nroots = 1
 pspace_size = 400
 spin = None
-CASCI E = -169.733010148148  S^2 = 0.0000000
+CASCI E = -169.737489477401  S^2 = 0.0000000
 Set conv_tol_grad to 0.000316228
-macro iter 1 (21 JK  4 micro), CASSCF E = -169.733473134526  dE = -0.00046298638  S^2 = 0.0000000
-               |grad[o]|=0.00696  |grad[c]|= 0.005126448903209655  |ddm|=0.00354  |maxRot[o]|=0.242
-macro iter 2 (17 JK  4 micro), CASSCF E = -169.734283252753  dE = -0.00081011823  S^2 = 0.0000000
-               |grad[o]|=0.00581  |grad[c]|= 0.016670831673717704  |ddm|=0.0132  |maxRot[o]|=0.183
-macro iter 3 (21 JK  4 micro), CASSCF E = -169.736845219414  dE = -0.0025619667  S^2 = 0.0000000
-               |grad[o]|=0.00574  |grad[c]|= 0.030249265075904766  |ddm|=0.0201  |maxRot[o]|=0.184
-macro iter 4 (21 JK  4 micro), CASSCF E = -169.743353343246  dE = -0.0065081238  S^2 = 0.0000000
-               |grad[o]|=0.0133  |grad[c]|= 0.04460200621792028  |ddm|=0.0288  |maxRot[o]|= 0.22
-macro iter 5 (21 JK  4 micro), CASSCF E = -169.756842617005  dE = -0.013489274  S^2 = 0.0000000
-               |grad[o]|=0.0279  |grad[c]|= 0.09650365795153248  |ddm|=0.0296  |maxRot[o]|=0.255
-macro iter 6 (21 JK  4 micro), CASSCF E = -169.769322099962  dE = -0.012479483  S^2 = 0.0000000
-               |grad[o]|=0.0408  |grad[c]|= 0.06943057638123912  |ddm|=0.0242  |maxRot[o]|= 0.29
-macro iter 7 (21 JK  4 micro), CASSCF E = -169.775674984867  dE = -0.0063528849  S^2 = 0.0000000
-               |grad[o]|=0.0346  |grad[c]|= 0.08086518974644105  |ddm|=0.0296  |maxRot[o]|=0.202
-macro iter 8 (21 JK  4 micro), CASSCF E = -169.777034385731  dE = -0.0013594009  S^2 = 0.0000000
-               |grad[o]|=0.0313  |grad[c]|= 0.05440403097078882  |ddm|=0.0124  |maxRot[o]|=0.0872
-macro iter 9 (21 JK  4 micro), CASSCF E = -169.778318713365  dE = -0.0012843276  S^2 = 0.0000000
-               |grad[o]|=0.0279  |grad[c]|= 0.05418277170119715  |ddm|=0.00994  |maxRot[o]|=0.0569
-macro iter 10 (21 JK  4 micro), CASSCF E = -169.779372763223  dE = -0.0010540499  S^2 = 0.0000000
-               |grad[o]|=0.025  |grad[c]|= 0.060072484888994165  |ddm|=0.0234  |maxRot[o]|=0.0291
-macro iter 11 (21 JK  4 micro), CASSCF E = -169.781178655521  dE = -0.0018058923  S^2 = 0.0000000
-               |grad[o]|=0.0235  |grad[c]|= 0.07415240711153656  |ddm|=0.0417  |maxRot[o]|=0.053
-macro iter 12 (17 JK  4 micro), CASSCF E = -169.79236773405  dE = -0.011189079  S^2 = 0.0000000
-               |grad[o]|=0.0243  |grad[c]|= 0.07571594773513374  |ddm|=0.0811  |maxRot[o]|=0.127
-macro iter 13 (21 JK  4 micro), CASSCF E = -169.800920845033  dE = -0.008553111  S^2 = 0.0000000
-               |grad[o]|=0.0364  |grad[c]|= 0.041298649062652855  |ddm|=0.0398  |maxRot[o]|=0.0805
-macro iter 14 (21 JK  4 micro), CASSCF E = -169.81089222064  dE = -0.0099713756  S^2 = 0.0000000
-               |grad[o]|=0.0409  |grad[c]|= 0.02234205488812521  |ddm|=0.0547  |maxRot[o]|=0.0808
-macro iter 15 (21 JK  4 micro), CASSCF E = -169.819700174456  dE = -0.0088079538  S^2 = 0.0000000
-               |grad[o]|=0.0417  |grad[c]|= 0.023158299099906472  |ddm|=0.0571  |maxRot[o]|=0.0774
-macro iter 16 (21 JK  4 micro), CASSCF E = -169.825462672825  dE = -0.0057624984  S^2 = 0.0000000
-               |grad[o]|=0.0338  |grad[c]|= 0.018094849923206893  |ddm|=0.0287  |maxRot[o]|=0.138
-macro iter 17 (21 JK  4 micro), CASSCF E = -169.827750807431  dE = -0.0022881346  S^2 = 0.0000000
-               |grad[o]|=0.0222  |grad[c]|= 0.009574965077154692  |ddm|=0.00767  |maxRot[o]|=0.172
-macro iter 18 (21 JK  4 micro), CASSCF E = -169.828977894508  dE = -0.0012270871  S^2 = 0.0000000
-               |grad[o]|=0.0147  |grad[c]|= 0.01755701971920846  |ddm|=0.005  |maxRot[o]|=0.131
-macro iter 19 (21 JK  4 micro), CASSCF E = -169.829456668045  dE = -0.00047877354  S^2 = 0.0000000
-               |grad[o]|=0.0101  |grad[c]|= 0.04786016533042501  |ddm|=0.00319  |maxRot[o]|=0.138
-macro iter 20 (21 JK  4 micro), CASSCF E = -169.829728807698  dE = -0.00027213965  S^2 = 0.0000000
-               |grad[o]|=0.00776  |grad[c]|= 0.034434630874700174  |ddm|=0.00463  |maxRot[o]|=0.145
-macro iter 21 (21 JK  4 micro), CASSCF E = -169.829801852679  dE = -7.3044981e-05  S^2 = 0.0000000
-               |grad[o]|=0.00668  |grad[c]|= 0.03222888413270541  |ddm|=0.0069  |maxRot[o]|=0.152
-macro iter 22 (17 JK  4 micro), CASSCF E = -169.829916663993  dE = -0.00011481131  S^2 = 0.0000000
-               |grad[o]|=0.00633  |grad[c]|= 0.05401246180933094  |ddm|=0.0031  |maxRot[o]|=0.101
-macro iter 23 (17 JK  4 micro), CASSCF E = -169.830035234701  dE = -0.00011857071  S^2 = 0.0000000
-               |grad[o]|=0.00484  |grad[c]|= 0.07370939330470055  |ddm|=0.00326  |maxRot[o]|=0.0968
-macro iter 24 (17 JK  4 micro), CASSCF E = -169.830060918664  dE = -2.5683963e-05  S^2 = 0.0000000
-               |grad[o]|=0.00359  |grad[c]|= 0.054087193504249335  |ddm|=0.00528  |maxRot[o]|=0.103
-macro iter 25 (7 JK  2 micro), CASSCF E = -169.830259145242  dE = -0.00019822658  S^2 = 0.0000000
-               |grad[o]|=0.00322  |grad[c]|= 0.011125654575010824  |ddm|=0.00117  |maxRot[o]|=0.067
-macro iter 26 (7 JK  2 micro), CASSCF E = -169.830507407185  dE = -0.00024826194  S^2 = 0.0000000
-               |grad[o]|=0.00339  |grad[c]|= 0.013847611763112359  |ddm|=0.00112  |maxRot[o]|=0.0662
-macro iter 27 (7 JK  2 micro), CASSCF E = -169.830781522986  dE = -0.0002741158  S^2 = 0.0000000
-               |grad[o]|=0.0034  |grad[c]|= 0.01445074844141332  |ddm|=0.000994  |maxRot[o]|=0.0699
-macro iter 28 (7 JK  2 micro), CASSCF E = -169.831075333698  dE = -0.00029381071  S^2 = 0.0000000
-               |grad[o]|=0.00335  |grad[c]|= 0.014464381466081533  |ddm|=0.000879  |maxRot[o]|=0.0699
-macro iter 29 (7 JK  2 micro), CASSCF E = -169.831377639337  dE = -0.00030230564  S^2 = 0.0000000
-               |grad[o]|=0.0033  |grad[c]|= 0.014131660549523098  |ddm|=0.000787  |maxRot[o]|=0.0699
-macro iter 30 (7 JK  2 micro), CASSCF E = -169.831675248273  dE = -0.00029760894  S^2 = 0.0000000
-               |grad[o]|=0.00319  |grad[c]|= 0.013585131792058778  |ddm|=0.000697  |maxRot[o]|=0.0699
-macro iter 31 (7 JK  2 micro), CASSCF E = -169.831952887834  dE = -0.00027763956  S^2 = 0.0000000
-               |grad[o]|=0.00295  |grad[c]|= 0.01309678586331513  |ddm|=0.000782  |maxRot[o]|=0.0699
-macro iter 32 (17 JK  4 micro), CASSCF E = -169.832035588883  dE = -8.2701049e-05  S^2 = 0.0000000
-               |grad[o]|=0.00248  |grad[c]|= 0.01854781487862445  |ddm|=0.00551  |maxRot[o]|=0.0769
-macro iter 33 (21 JK  4 micro), CASSCF E = -169.831988888651  dE = 4.6700232e-05  S^2 = 0.0000000
-               |grad[o]|=0.00178  |grad[c]|= 0.013175930363129263  |ddm|=0.00313  |maxRot[o]|=0.151
-macro iter 34 (21 JK  4 micro), CASSCF E = -169.832084498557  dE = -9.5609907e-05  S^2 = 0.0000000
-               |grad[o]|=0.00166  |grad[c]|= 0.0018922606985560858  |ddm|=0.00032  |maxRot[o]|=0.0434
-macro iter 35 (21 JK  4 micro), CASSCF E = -169.832087435282  dE = -2.9367246e-06  S^2 = 0.0000000
-               |grad[o]|=0.00133  |grad[c]|= 0.0031826130367050166  |ddm|=0.000422  |maxRot[o]|=0.00223
-macro iter 36 (21 JK  4 micro), CASSCF E = -169.83207982617  dE = 7.6091114e-06  S^2 = 0.0000000
-               |grad[o]|=0.00129  |grad[c]|= 0.005484201892233156  |ddm|=0.000573  |maxRot[o]|=0.00742
-macro iter 37 (21 JK  4 micro), CASSCF E = -169.832116211209  dE = -3.6385038e-05  S^2 = 0.0000000
-               |grad[o]|=0.00124  |grad[c]|= 0.0007780285592969867  |ddm|=0.000191  |maxRot[o]|=0.019
-macro iter 38 (21 JK  4 micro), CASSCF E = -169.832131905384  dE = -1.5694175e-05  S^2 = 0.0000000
-               |grad[o]|=0.00111  |grad[c]|= 0.0022176421041165293  |ddm|=0.00032  |maxRot[o]|=0.0107
-macro iter 39 (21 JK  4 micro), CASSCF E = -169.832125770196  dE = 6.1351879e-06  S^2 = 0.0000000
-               |grad[o]|=0.00104  |grad[c]|= 0.004695141493597939  |ddm|=0.00054  |maxRot[o]|=0.00575
-macro iter 40 (21 JK  4 micro), CASSCF E = -169.832138652594  dE = -1.2882398e-05  S^2 = 0.0000000
-               |grad[o]|=0.00101  |grad[c]|= 0.0006959973515912686  |ddm|=0.000175  |maxRot[o]|=0.0329
-macro iter 41 (21 JK  4 micro), CASSCF E = -169.832142144597  dE = -3.4920027e-06  S^2 = 0.0000000
-               |grad[o]|=0.00104  |grad[c]|= 0.002351715681049712  |ddm|=0.000373  |maxRot[o]|=0.00198
-macro iter 42 (21 JK  4 micro), CASSCF E = -169.832134097819  dE = 8.0467783e-06  S^2 = 0.0000000
-               |grad[o]|=0.00102  |grad[c]|= 0.004731615742608209  |ddm|=0.000555  |maxRot[o]|=0.00639
-macro iter 43 (21 JK  4 micro), CASSCF E = -169.832151397591  dE = -1.7299772e-05  S^2 = 0.0000000
-               |grad[o]|=0.000995  |grad[c]|= 0.0007400877648635135  |ddm|=0.000185  |maxRot[o]|=0.0323
-macro iter 44 (21 JK  4 micro), CASSCF E = -169.832155325105  dE = -3.9275137e-06  S^2 = 0.0000000
-               |grad[o]|=0.00102  |grad[c]|= 0.00241904812253795  |ddm|=0.000384  |maxRot[o]|=0.00236
-macro iter 45 (21 JK  4 micro), CASSCF E = -169.832145981522  dE = 9.3435825e-06  S^2 = 0.0000000
-               |grad[o]|=0.001  |grad[c]|= 0.004830019426011988  |ddm|=0.000571  |maxRot[o]|=0.00661
-macro iter 46 (21 JK  4 micro), CASSCF E = -169.832168766533  dE = -2.278501e-05  S^2 = 0.0000000
-               |grad[o]|=0.000993  |grad[c]|= 0.0007917573137041088  |ddm|=0.000191  |maxRot[o]|=0.0322
-macro iter 47 (21 JK  4 micro), CASSCF E = -169.832173091043  dE = -4.3245107e-06  S^2 = 0.0000000
-               |grad[o]|=0.00103  |grad[c]|= 0.0025217971692349564  |ddm|=0.000392  |maxRot[o]|=0.00267
-macro iter 48 (21 JK  4 micro), CASSCF E = -169.832162092392  dE = 1.0998651e-05  S^2 = 0.0000000
-               |grad[o]|=0.00101  |grad[c]|= 0.0049944766466425644  |ddm|=0.000582  |maxRot[o]|=0.00715
-macro iter 49 (21 JK  4 micro), CASSCF E = -169.832192630917  dE = -3.0538525e-05  S^2 = 0.0000000
-               |grad[o]|=0.00101  |grad[c]|= 0.003215976254960036  |ddm|=0.000517  |maxRot[o]|=0.0321
-macro iter 50 (21 JK  4 micro), CASSCF E = -169.832196477787  dE = -3.8468697e-06  S^2 = 0.0000000
-               |grad[o]|=0.00101  |grad[c]|= 0.002610547058670035  |ddm|=0.000385  |maxRot[o]|=0.00254
-1-step CASSCF not converged, 50 macro (928 JK 186 micro) steps
+macro iter 1 (21 JK  4 micro), CASSCF E = -169.73843952385  dE = -0.00095004645  S^2 = 0.0000000
+               |grad[o]|=0.0129  |grad[c]|= 0.023643073172601062  |ddm|=0.00701  |maxRot[o]|=0.208
+macro iter 2 (21 JK  4 micro), CASSCF E = -169.740069397069  dE = -0.0016298732  S^2 = 0.0000000
+               |grad[o]|=0.00985  |grad[c]|= 0.030352650994982557  |ddm|=0.0209  |maxRot[o]|=0.217
+macro iter 3 (21 JK  4 micro), CASSCF E = -169.744599013025  dE = -0.004529616  S^2 = 0.0000000
+               |grad[o]|=0.011  |grad[c]|= 0.0370728634971726  |ddm|=0.0116  |maxRot[o]|=0.287
+macro iter 4 (21 JK  4 micro), CASSCF E = -169.755025578971  dE = -0.010426566  S^2 = 0.0000000
+               |grad[o]|=0.0195  |grad[c]|= 0.04144878067220783  |ddm|=0.0181  |maxRot[o]|=0.314
+macro iter 5 (21 JK  4 micro), CASSCF E = -169.764602290901  dE = -0.0095767119  S^2 = 0.0000000
+               |grad[o]|=0.0341  |grad[c]|= 0.03275142956246194  |ddm|=0.0289  |maxRot[o]|=0.254
+macro iter 6 (21 JK  4 micro), CASSCF E = -169.768136585482  dE = -0.0035342946  S^2 = 0.0000000
+               |grad[o]|=0.0341  |grad[c]|= 0.01311498163948425  |ddm|=0.0127  |maxRot[o]|=0.288
+macro iter 7 (21 JK  4 micro), CASSCF E = -169.771598892467  dE = -0.003462307  S^2 = 0.0000000
+               |grad[o]|=0.0272  |grad[c]|= 0.01339395401165734  |ddm|=0.00589  |maxRot[o]|=0.315
+macro iter 8 (21 JK  4 micro), CASSCF E = -169.780068638774  dE = -0.0084697463  S^2 = 0.0000000
+               |grad[o]|=0.0236  |grad[c]|= 0.079130144211729  |ddm|=0.0198  |maxRot[o]|=0.259
+macro iter 9 (21 JK  4 micro), CASSCF E = -169.789166924598  dE = -0.0090982858  S^2 = 0.0000000
+               |grad[o]|=0.0248  |grad[c]|= 0.0745380090410723  |ddm|=0.0656  |maxRot[o]|=0.161
+macro iter 10 (21 JK  4 micro), CASSCF E = -169.803519186876  dE = -0.014352262  S^2 = 0.0000000
+               |grad[o]|=0.0305  |grad[c]|= 0.044140651510419716  |ddm|=0.0529  |maxRot[o]|=0.193
+macro iter 11 (21 JK  4 micro), CASSCF E = -169.815499996738  dE = -0.01198081  S^2 = 0.0000000
+               |grad[o]|=0.0341  |grad[c]|= 0.03654993369382227  |ddm|=0.0552  |maxRot[o]|=0.159
+macro iter 12 (21 JK  4 micro), CASSCF E = -169.826162779746  dE = -0.010662783  S^2 = 0.0000000
+               |grad[o]|=0.0316  |grad[c]|= 0.033472477941501474  |ddm|=0.0505  |maxRot[o]|=0.173
+macro iter 13 (21 JK  4 micro), CASSCF E = -169.832337848712  dE = -0.006175069  S^2 = 0.0000000
+               |grad[o]|=0.0261  |grad[c]|= 0.02975461536544737  |ddm|=0.0423  |maxRot[o]|=0.135
+macro iter 14 (21 JK  4 micro), CASSCF E = -169.836583776941  dE = -0.0042459282  S^2 = 0.0000000
+               |grad[o]|=0.0208  |grad[c]|= 0.01902673453626705  |ddm|=0.027  |maxRot[o]|=0.0803
+macro iter 15 (21 JK  4 micro), CASSCF E = -169.839079001259  dE = -0.0024952243  S^2 = 0.0000000
+               |grad[o]|=0.0154  |grad[c]|= 0.008523215551920621  |ddm|=0.0154  |maxRot[o]|=0.175
+macro iter 16 (21 JK  4 micro), CASSCF E = -169.840452397387  dE = -0.0013733961  S^2 = 0.0000000
+               |grad[o]|=0.0145  |grad[c]|= 0.006436691157024714  |ddm|=0.00614  |maxRot[o]|=0.143
+macro iter 17 (12 JK  3 micro), CASSCF E = -169.841012500637  dE = -0.00056010325  S^2 = 0.0000000
+               |grad[o]|=0.0158  |grad[c]|= 0.003151619133376879  |ddm|=0.00478  |maxRot[o]|=0.137
+macro iter 18 (21 JK  4 micro), CASSCF E = -169.841838405959  dE = -0.00082590532  S^2 = 0.0000000
+               |grad[o]|=0.0299  |grad[c]|= 0.012582930732717006  |ddm|=0.00377  |maxRot[o]|=0.081
+macro iter 19 (21 JK  4 micro), CASSCF E = -169.842352733124  dE = -0.00051432716  S^2 = 0.0000000
+               |grad[o]|=0.0121  |grad[c]|= 0.006264369587554533  |ddm|=0.00154  |maxRot[o]|=0.0532
+macro iter 20 (21 JK  4 micro), CASSCF E = -169.842712792368  dE = -0.00036005924  S^2 = 0.0000000
+               |grad[o]|=0.00801  |grad[c]|= 0.005875612060452087  |ddm|=0.000915  |maxRot[o]|=0.0507
+macro iter 21 (21 JK  4 micro), CASSCF E = -169.842745400618  dE = -3.2608251e-05  S^2 = 0.0000000
+               |grad[o]|=0.00619  |grad[c]|= 0.01683548215376665  |ddm|=0.000907  |maxRot[o]|=0.035
+macro iter 22 (21 JK  4 micro), CASSCF E = -169.842794911336  dE = -4.9510718e-05  S^2 = 0.0000000
+               |grad[o]|=0.00537  |grad[c]|= 0.0169440217956527  |ddm|=0.00104  |maxRot[o]|=0.0387
+macro iter 23 (21 JK  4 micro), CASSCF E = -169.842880664462  dE = -8.5753126e-05  S^2 = 0.0000000
+               |grad[o]|=0.00477  |grad[c]|= 0.01732471013279929  |ddm|=0.0012  |maxRot[o]|=0.0511
+macro iter 24 (21 JK  4 micro), CASSCF E = -169.843022694673  dE = -0.00014203021  S^2 = 0.0000000
+               |grad[o]|=0.00443  |grad[c]|= 0.017497676371684263  |ddm|=0.00152  |maxRot[o]|=0.062
+macro iter 25 (21 JK  4 micro), CASSCF E = -169.843236953441  dE = -0.00021425877  S^2 = 0.0000000
+               |grad[o]|=0.00433  |grad[c]|= 0.016879253098311685  |ddm|=0.00183  |maxRot[o]|=0.0664
+macro iter 26 (21 JK  4 micro), CASSCF E = -169.843476113202  dE = -0.00023915976  S^2 = 0.0000000
+               |grad[o]|=0.00445  |grad[c]|= 0.01638511950710842  |ddm|=0.00209  |maxRot[o]|=0.0629
+macro iter 27 (21 JK  4 micro), CASSCF E = -169.843657988745  dE = -0.00018187554  S^2 = 0.0000000
+               |grad[o]|=0.00468  |grad[c]|= 0.01711585321799381  |ddm|=0.00239  |maxRot[o]|=0.0531
+macro iter 28 (21 JK  4 micro), CASSCF E = -169.843976137921  dE = -0.00031814918  S^2 = 0.0000000
+               |grad[o]|=0.00492  |grad[c]|= 0.016379873442168146  |ddm|=0.00203  |maxRot[o]|=0.0478
+macro iter 29 (21 JK  4 micro), CASSCF E = -169.844460208433  dE = -0.00048407051  S^2 = 0.0000000
+               |grad[o]|=0.00539  |grad[c]|= 0.013036880326255705  |ddm|=0.00138  |maxRot[o]|=0.044
+macro iter 30 (21 JK  4 micro), CASSCF E = -169.843305481001  dE = 0.0011547274  S^2 = 0.0000000
+               |grad[o]|=0.00609  |grad[c]|= 0.01299766714558934  |ddm|=0.00168  |maxRot[o]|=0.128
+macro iter 31 (21 JK  4 micro), CASSCF E = -169.843888302166  dE = -0.00058282116  S^2 = 0.0000000
+               |grad[o]|=0.00479  |grad[c]|= 0.005194613808222102  |ddm|=0.00163  |maxRot[o]|=0.062
+macro iter 32 (21 JK  4 micro), CASSCF E = -169.844924782542  dE = -0.0010364804  S^2 = 0.0000000
+               |grad[o]|=0.00552  |grad[c]|= 0.009694760967332969  |ddm|=0.00158  |maxRot[o]|=0.088
+macro iter 33 (12 JK  3 micro), CASSCF E = -169.846599494428  dE = -0.0016747119  S^2 = 0.0000000
+               |grad[o]|=0.0068  |grad[c]|= 0.0037135363214220933  |ddm|=0.00382  |maxRot[o]|=0.111
+macro iter 34 (12 JK  3 micro), CASSCF E = -169.848362097526  dE = -0.0017626031  S^2 = 0.0000000
+               |grad[o]|=0.00855  |grad[c]|= 0.011271913907713864  |ddm|=0.00474  |maxRot[o]|=0.105
+macro iter 35 (12 JK  3 micro), CASSCF E = -169.849388912989  dE = -0.0010268155  S^2 = 0.0000000
+               |grad[o]|=0.00997  |grad[c]|= 0.012703153431246735  |ddm|=0.00319  |maxRot[o]|=0.0614
+macro iter 36 (21 JK  4 micro), CASSCF E = -169.851455779212  dE = -0.0020668662  S^2 = 0.0000000
+               |grad[o]|=0.0105  |grad[c]|= 0.006218770105726483  |ddm|=0.00248  |maxRot[o]|=0.0935
+macro iter 37 (17 JK  4 micro), CASSCF E = -169.850194564916  dE = 0.0012612143  S^2 = 0.0000000
+               |grad[o]|=0.0107  |grad[c]|= 0.05414385908907252  |ddm|=0.00369  |maxRot[o]|=0.125
+macro iter 38 (21 JK  4 micro), CASSCF E = -169.85167747803  dE = -0.0014829131  S^2 = 0.0000000
+               |grad[o]|=0.00998  |grad[c]|= 0.0037562359617955383  |ddm|=0.00277  |maxRot[o]|=0.0718
+macro iter 39 (21 JK  4 micro), CASSCF E = -169.852862149853  dE = -0.0011846718  S^2 = 0.0000000
+               |grad[o]|=0.0102  |grad[c]|= 0.008185732432222837  |ddm|=0.00301  |maxRot[o]|=0.0579
+macro iter 40 (12 JK  3 micro), CASSCF E = -169.854373332438  dE = -0.0015111826  S^2 = 0.0000000
+               |grad[o]|=0.0102  |grad[c]|= 0.007506967196688537  |ddm|=0.00368  |maxRot[o]|=0.0751
+macro iter 41 (21 JK  4 micro), CASSCF E = -169.855389498838  dE = -0.0010161664  S^2 = 0.0000000
+               |grad[o]|=0.0101  |grad[c]|= 0.007828831020133722  |ddm|=0.00322  |maxRot[o]|=0.055
+macro iter 42 (21 JK  4 micro), CASSCF E = -169.856682543795  dE = -0.001293045  S^2 = 0.0000000
+               |grad[o]|=0.00972  |grad[c]|= 0.005367142555265194  |ddm|=0.0026  |maxRot[o]|=0.0713
+macro iter 43 (21 JK  4 micro), CASSCF E = -169.858173360222  dE = -0.0014908164  S^2 = 0.0000000
+               |grad[o]|=0.0092  |grad[c]|= 0.004818436602792484  |ddm|=0.00331  |maxRot[o]|=0.0859
+macro iter 44 (21 JK  4 micro), CASSCF E = -169.858869171386  dE = -0.00069581116  S^2 = 0.0000000
+               |grad[o]|=0.00848  |grad[c]|= 0.0058610580214825455  |ddm|=0.00438  |maxRot[o]|=0.0446
+macro iter 45 (21 JK  4 micro), CASSCF E = -169.858951570261  dE = -8.2398876e-05  S^2 = 0.0000000
+               |grad[o]|=0.00801  |grad[c]|= 0.013197835141623163  |ddm|=0.00528  |maxRot[o]|=0.0343
+macro iter 46 (17 JK  4 micro), CASSCF E = -169.860073437895  dE = -0.0011218676  S^2 = 0.0000000
+               |grad[o]|=0.00808  |grad[c]|= 0.013987489192536989  |ddm|=0.0045  |maxRot[o]|=0.0696
+macro iter 47 (21 JK  4 micro), CASSCF E = -169.86052250714  dE = -0.00044906925  S^2 = 0.0000000
+               |grad[o]|=0.00705  |grad[c]|= 0.004295318427285307  |ddm|=0.00306  |maxRot[o]|=0.0508
+macro iter 48 (17 JK  4 micro), CASSCF E = -169.861100442976  dE = -0.00057793584  S^2 = 0.0000000
+               |grad[o]|=0.00678  |grad[c]|= 0.019233550860520837  |ddm|=0.00576  |maxRot[o]|=0.0673
+macro iter 49 (7 JK  2 micro), CASSCF E = -169.861622940321  dE = -0.00052249735  S^2 = 0.0000000
+               |grad[o]|=0.00599  |grad[c]|= 0.005517785240018157  |ddm|=0.00269  |maxRot[o]|=0.0699
+macro iter 50 (7 JK  2 micro), CASSCF E = -169.862095009278  dE = -0.00047206896  S^2 = 0.0000000
+               |grad[o]|=0.00582  |grad[c]|= 0.0034532806628555226  |ddm|=0.00299  |maxRot[o]|=0.0699
+1-step CASSCF not converged, 50 macro (965 JK 191 micro) steps
 CASSCF canonicalization
-Density matrix diagonal elements [1.93475945 1.99355058 1.99552508 1.99161613 1.93791339 0.06741991
- 0.07921546]
-CASSCF energy = -169.832196477787
-CASCI E = -169.832196477787  E(CI) = -34.9270034892229  S^2 = 0.0000000
+Density matrix diagonal elements [1.99776375 1.91601071 1.97120228 1.9405462  1.98389653 1.99829601
+ 0.00641952 0.07526924 0.07928747 0.0313083 ]
+CASSCF energy = -169.862095009278
+CASCI E = -169.862095009278  E(CI) = -43.6627914084545  S^2 = 0.0000000
 
 
 ******** <class 'pyscf.scf.uhf.UHF'> ********
@@ -218,33 +219,33 @@ SCF conv_tol_grad = None
 SCF max_cycles = 1000
 direct_scf = True
 direct_scf_tol = 1e-13
-chkfile to save SCF result = /scratch/global/yangjunjie/test/410944/tmpbu8526zq
-max_memory 4000 MB (current use 552 MB)
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410946/tmpl540jdbm
+max_memory 4000 MB (current use 584 MB)
 number electrons alpha = 14  beta = 14
 Set gradient conv threshold to 3.16228e-05
-init E= -169.683224489794
-  alpha nocc = 14  HOMO = 0.407691862358047  LUMO = 0.491119693692415
-  beta  nocc = 14  HOMO = 0.407691862357699  LUMO = 0.49111969369241
-cycle= 1 E= -169.679823760935  delta_E= 0.0034  |g|= 0.00208  |ddm|= 0.0255
-  alpha nocc = 14  HOMO = 0.407935911846391  LUMO = 0.491218379442791
-  beta  nocc = 14  HOMO = 0.407935911846323  LUMO = 0.491218379442787
-cycle= 2 E= -169.679829328992  delta_E= -5.57e-06  |g|= 0.000883  |ddm|= 0.00395
-  alpha nocc = 14  HOMO = 0.407954519831231  LUMO = 0.491199958732302
-  beta  nocc = 14  HOMO = 0.40795451983125  LUMO = 0.4911999587323
-cycle= 3 E= -169.6798309252  delta_E= -1.6e-06  |g|= 0.000278  |ddm|= 0.00237
-  alpha nocc = 14  HOMO = 0.407952052111484  LUMO = 0.491195992584495
-  beta  nocc = 14  HOMO = 0.407952052111503  LUMO = 0.491195992584495
-cycle= 4 E= -169.679831081818  delta_E= -1.57e-07  |g|= 7.4e-05  |ddm|= 0.000884
-  alpha nocc = 14  HOMO = 0.407952514945386  LUMO = 0.49119629862774
-  beta  nocc = 14  HOMO = 0.407952514945404  LUMO = 0.49119629862774
-cycle= 5 E= -169.679831086939  delta_E= -5.12e-09  |g|= 7.65e-06  |ddm|= 0.000142
-  alpha nocc = 14  HOMO = 0.407952715071012  LUMO = 0.491196027750907
-  beta  nocc = 14  HOMO = 0.407952715071044  LUMO = 0.491196027750907
-cycle= 6 E= -169.679831087055  delta_E= -1.16e-10  |g|= 2.27e-06  |ddm|= 2.66e-05
-  alpha nocc = 14  HOMO = 0.407952715366608  LUMO = 0.491196033852887
-  beta  nocc = 14  HOMO = 0.407952715366671  LUMO = 0.491196033852888
-Extra cycle  E= -169.679831087064  delta_E= -9.04e-12  |g|= 1.21e-06  |ddm|= 4.74e-06
-converged SCF energy = -169.679831087064  <S^2> = 1.0004888  2S+1 = 2.2365051
+init E= -169.593476679298
+  alpha nocc = 14  HOMO = 0.408479279791689  LUMO = 0.491070233981606
+  beta  nocc = 14  HOMO = 0.408479279791732  LUMO = 0.491070233981613
+cycle= 1 E= -169.590084241577  delta_E= 0.00339  |g|= 0.00208  |ddm|= 0.0256
+  alpha nocc = 14  HOMO = 0.408713248315801  LUMO = 0.491169270892653
+  beta  nocc = 14  HOMO = 0.408713248315836  LUMO = 0.49116927089266
+cycle= 2 E= -169.59008986895  delta_E= -5.63e-06  |g|= 0.000886  |ddm|= 0.00398
+  alpha nocc = 14  HOMO = 0.408729785143397  LUMO = 0.491150221770218
+  beta  nocc = 14  HOMO = 0.408729785143425  LUMO = 0.491150221770224
+cycle= 3 E= -169.590091502659  delta_E= -1.63e-06  |g|= 0.00027  |ddm|= 0.00243
+  alpha nocc = 14  HOMO = 0.408726983885124  LUMO = 0.491146714805726
+  beta  nocc = 14  HOMO = 0.408726983885146  LUMO = 0.491146714805729
+cycle= 4 E= -169.590091657727  delta_E= -1.55e-07  |g|= 6.41e-05  |ddm|= 0.000919
+  alpha nocc = 14  HOMO = 0.408727460273131  LUMO = 0.491146922956947
+  beta  nocc = 14  HOMO = 0.40872746027315  LUMO = 0.491146922956951
+cycle= 5 E= -169.590091661615  delta_E= -3.89e-09  |g|= 8.56e-06  |ddm|= 0.000144
+  alpha nocc = 14  HOMO = 0.408727655398719  LUMO = 0.491146654331789
+  beta  nocc = 14  HOMO = 0.408727655398738  LUMO = 0.491146654331792
+cycle= 6 E= -169.59009166244  delta_E= -8.25e-10  |g|= 6.86e-06  |ddm|= 0.000177
+  alpha nocc = 14  HOMO = 0.408727652537649  LUMO = 0.491146663138485
+  beta  nocc = 14  HOMO = 0.408727652537667  LUMO = 0.491146663138487
+Extra cycle  E= -169.590091663691  delta_E= -1.25e-09  |g|= 9.37e-06  |ddm|= 0.000208
+converged SCF energy = -169.590091663691  <S^2> = 1.437635e-07  2S+1 = 1.0000003
 
 
 ******** <class 'pyscf.scf.uhf.UHF'> ********
@@ -260,48 +261,45 @@ SCF conv_tol_grad = None
 SCF max_cycles = 1000
 direct_scf = True
 direct_scf_tol = 1e-13
-chkfile to save SCF result = /scratch/global/yangjunjie/test/410944/tmpje9xo5ir
-max_memory 4000 MB (current use 552 MB)
+chkfile to save SCF result = /scratch/global/yangjunjie/test/410946/tmpo86v_805
+max_memory 4000 MB (current use 584 MB)
 number electrons alpha = 15  beta = 13
 Set gradient conv threshold to 3.16228e-05
-init E= -169.669994762353
-  alpha nocc = 15  HOMO = 0.490655100578822  LUMO = 0.534798211140216
-  beta  nocc = 13  HOMO = 0.370957176658954  LUMO = 0.554629950257891
-cycle= 1 E= -169.666665300846  delta_E= 0.00333  |g|= 0.00385  |ddm|= 0.0326
-  alpha nocc = 15  HOMO = 0.492674690518571  LUMO = 0.535117158276217
-  beta  nocc = 13  HOMO = 0.371681852910822  LUMO = 0.554968955740401
-cycle= 2 E= -169.666689099328  delta_E= -2.38e-05  |g|= 0.00246  |ddm|= 0.0116
-  alpha nocc = 15  HOMO = 0.491667772317086  LUMO = 0.535059189521742
-  beta  nocc = 13  HOMO = 0.371447286633689  LUMO = 0.554845290585223
-cycle= 3 E= -169.66670259009  delta_E= -1.35e-05  |g|= 0.00201  |ddm|= 0.00669
-  alpha nocc = 15  HOMO = 0.491850890858277  LUMO = 0.535065831199469
-  beta  nocc = 13  HOMO = 0.371647948862761  LUMO = 0.554811560648465
-cycle= 4 E= -169.66672000319  delta_E= -1.74e-05  |g|= 0.00156  |ddm|= 0.0109
-  alpha nocc = 15  HOMO = 0.491647967557022  LUMO = 0.535103217243555
-  beta  nocc = 13  HOMO = 0.371900971393193  LUMO = 0.554728603773923
-cycle= 5 E= -169.66677808847  delta_E= -5.81e-05  |g|= 0.0022  |ddm|= 0.0437
-  alpha nocc = 15  HOMO = 0.491597740748688  LUMO = 0.535098995078341
-  beta  nocc = 13  HOMO = 0.371910317364786  LUMO = 0.554723362977311
-cycle= 6 E= -169.666746387085  delta_E= 3.17e-05  |g|= 0.00133  |ddm|= 0.0257
-  alpha nocc = 15  HOMO = 0.491765527098493  LUMO = 0.535205138628342
-  beta  nocc = 13  HOMO = 0.372359526211562  LUMO = 0.554691892660544
-cycle= 7 E= -169.666746620235  delta_E= -2.33e-07  |g|= 0.000503  |ddm|= 0.0261
-  alpha nocc = 15  HOMO = 0.491752958538873  LUMO = 0.535122814838336
-  beta  nocc = 13  HOMO = 0.372474671274245  LUMO = 0.554623495440028
-cycle= 8 E= -169.666748757662  delta_E= -2.14e-06  |g|= 0.000265  |ddm|= 0.00811
-  alpha nocc = 15  HOMO = 0.491578776460693  LUMO = 0.535206590055679
-  beta  nocc = 13  HOMO = 0.372619321260169  LUMO = 0.554614060323234
-cycle= 9 E= -169.666749085798  delta_E= -3.28e-07  |g|= 0.000155  |ddm|= 0.00201
-  alpha nocc = 15  HOMO = 0.491379320265749  LUMO = 0.535184400290262
-  beta  nocc = 13  HOMO = 0.372640629369371  LUMO = 0.554575222355572
-cycle= 10 E= -169.66674923964  delta_E= -1.54e-07  |g|= 4.43e-05  |ddm|= 0.00199
-  alpha nocc = 15  HOMO = 0.491339554205634  LUMO = 0.535175205342748
-  beta  nocc = 13  HOMO = 0.372645143470134  LUMO = 0.554566550647059
-cycle= 11 E= -169.666749250953  delta_E= -1.13e-08  |g|= 1.11e-05  |ddm|= 0.000545
-  alpha nocc = 15  HOMO = 0.491334680810044  LUMO = 0.535177199780676
-  beta  nocc = 13  HOMO = 0.372646152813511  LUMO = 0.554566618723596
-cycle= 12 E= -169.666749251556  delta_E= -6.03e-10  |g|= 5.54e-06  |ddm|= 0.000131
-  alpha nocc = 15  HOMO = 0.49133569277585  LUMO = 0.535176580438837
-  beta  nocc = 13  HOMO = 0.372645246666886  LUMO = 0.554566611764067
-Extra cycle  E= -169.666749251749  delta_E= -1.92e-10  |g|= 4.56e-06  |ddm|= 7.23e-05
-converged SCF energy = -169.666749251749  <S^2> = 3.1737041  2S+1 = 3.7006508
+init E= -169.724486019643
+  alpha nocc = 15  HOMO = 0.414227127962321  LUMO = 0.767304007621862
+  beta  nocc = 13  HOMO = 0.365515017721965  LUMO = 0.549173965693415
+cycle= 1 E= -169.721959472055  delta_E= 0.00253  |g|= 0.00258  |ddm|= 0.0294
+  alpha nocc = 15  HOMO = 0.4139216385838  LUMO = 0.766760436120368
+  beta  nocc = 13  HOMO = 0.365633015450213  LUMO = 0.548956727551573
+cycle= 2 E= -169.721967769945  delta_E= -8.3e-06  |g|= 0.0011  |ddm|= 0.00755
+  alpha nocc = 15  HOMO = 0.413931209442912  LUMO = 0.76673647547931
+  beta  nocc = 13  HOMO = 0.36561801880375  LUMO = 0.548973959471419
+cycle= 3 E= -169.721970586278  delta_E= -2.82e-06  |g|= 0.000607  |ddm|= 0.00415
+  alpha nocc = 15  HOMO = 0.413928174782948  LUMO = 0.766637829669214
+  beta  nocc = 13  HOMO = 0.365527299936812  LUMO = 0.548976802016997
+cycle= 4 E= -169.721972000806  delta_E= -1.41e-06  |g|= 0.000401  |ddm|= 0.00279
+  alpha nocc = 15  HOMO = 0.413933455468276  LUMO = 0.766624470335907
+  beta  nocc = 13  HOMO = 0.365601695836654  LUMO = 0.548982040589013
+cycle= 5 E= -169.721972700866  delta_E= -7e-07  |g|= 0.00029  |ddm|= 0.00202
+  alpha nocc = 15  HOMO = 0.413935057793501  LUMO = 0.766571966593383
+  beta  nocc = 13  HOMO = 0.36564541994623  LUMO = 0.54898901447097
+cycle= 6 E= -169.721973374232  delta_E= -6.73e-07  |g|= 8.75e-05  |ddm|= 0.00395
+  alpha nocc = 15  HOMO = 0.413937385084444  LUMO = 0.766567499220157
+  beta  nocc = 13  HOMO = 0.365677736927758  LUMO = 0.548989258841028
+cycle= 7 E= -169.721973410514  delta_E= -3.63e-08  |g|= 3.63e-05  |ddm|= 0.000849
+  alpha nocc = 15  HOMO = 0.413936616983445  LUMO = 0.766566522585546
+  beta  nocc = 13  HOMO = 0.36568491623779  LUMO = 0.548988832549456
+cycle= 8 E= -169.721973415541  delta_E= -5.03e-09  |g|= 2.79e-05  |ddm|= 0.000216
+  alpha nocc = 15  HOMO = 0.413936538746644  LUMO = 0.766566643992445
+  beta  nocc = 13  HOMO = 0.365687078207646  LUMO = 0.548988761733531
+cycle= 9 E= -169.721973417251  delta_E= -1.71e-09  |g|= 2.93e-05  |ddm|= 5.39e-05
+  alpha nocc = 15  HOMO = 0.413936371546614  LUMO = 0.766567156015753
+  beta  nocc = 13  HOMO = 0.365690060405318  LUMO = 0.548988756596052
+cycle= 10 E= -169.721973410576  delta_E= 6.67e-09  |g|= 1.66e-05  |ddm|= 0.000282
+  alpha nocc = 15  HOMO = 0.413936385352365  LUMO = 0.766567260589296
+  beta  nocc = 13  HOMO = 0.365690789761008  LUMO = 0.548988683579639
+cycle= 11 E= -169.721973410586  delta_E= -9.83e-12  |g|= 1.12e-05  |ddm|= 0.000102
+  alpha nocc = 15  HOMO = 0.413936408746154  LUMO = 0.766566926659324
+  beta  nocc = 13  HOMO = 0.365690552769677  LUMO = 0.54898866268059
+Extra cycle  E= -169.721973410913  delta_E= -3.27e-10  |g|= 9.42e-06  |ddm|= 3.4e-05
+converged SCF energy = -169.721973410913  <S^2> = 4.0542369  2S+1 = 4.149331
