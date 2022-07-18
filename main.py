@@ -97,10 +97,10 @@ def get_r_ene(r, dr_max=0.1):
         w2 = ww * ww.conj()
 
         ni_3d_idx = mol.search_ao_label("Ni 3d")
-        tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx])
-        mo_list = numpy.where(tmp > 1e-1)[0]
+        tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx]).real
+        mo_list = numpy.where(tmp > 1e-3)[0]
 
-        print(numpy.sort(tmp))
+        print(numpy.sort(tmp)[::-1])
         print(mo_list)
 
         ncas = len(mo_list)
@@ -142,6 +142,7 @@ def get_r_ene(r, dr_max=0.1):
 
         print(f"\ndr = {dr: 4.2f}, dr = {dr: 4.2f}")
         print(f"erhf = {e_r_list[-1]: 8.6f}, eu0hf = {e_u0_list[-1]: 8.6f}, eu1hf = {e_u1_list[-1]: 8.6f}")
+        print(f"e_casci_list = {e_casci_list[-1]: 8.6f}, e_casscf_list = {e_casscf_list[-1]: 8.6f}")
 
     e_r_list = numpy.asarray(e_r_list)
     e_u0_list = numpy.asarray(e_u0_list)
