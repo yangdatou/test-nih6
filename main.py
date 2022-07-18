@@ -108,6 +108,9 @@ def get_r_ene(r, dr_max=0.1):
         ncas = len(mo_list)
         nele = int(sum(mf.mo_occ[mo_list]))
 
+        for i, mo_idx in enumerate(mo_list):
+            print(f'{i+1}/{ncas} {mo_idx} {mf.mo_energy[mo_idx]:10.7f}')
+
         print(ncas)
         print(nele)
 
