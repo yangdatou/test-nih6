@@ -98,7 +98,7 @@ def get_r_ene(r, dr_max=0.1):
 
         ni_3d_idx = mol.search_ao_label("Ni 3d")
         tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx]).real
-        mo_list = numpy.where(tmp > 1e-5)[0]
+        mo_list = numpy.where(tmp > 1e-10)[0]
 
         print(numpy.sort(tmp)[::-1])
         print(mo_list)
@@ -117,14 +117,14 @@ def get_r_ene(r, dr_max=0.1):
         mycas.kernel(mo)
         e_casci_list.append(mycas.e_tot)
 
-        mycas = CASSCF(mf, ncas, nele)
-        mycas.verbose = 4
-        mycas.fcisolver.max_cycle = 200
-        mycas.max_cycle_macro = 200
-        mycas.max_cycle_micro = 200
-        mo = mycas.sort_mo(mo_list)
-        mycas.kernel(mo)
-        e_casscf_list.append(mycas.e_tot)
+        # mycas = CASSCF(mf, ncas, nele)
+        # mycas.verbose = 4
+        # mycas.fcisolver.max_cycle = 200
+        # mycas.max_cycle_macro = 200
+        # mycas.max_cycle_micro = 200
+        # mo = mycas.sort_mo(mo_list)
+        # mycas.kernel(mo)
+        e_casscf_list.append(0.0)
 
         mf = scf.UHF(mol)
         mf.max_cycle = 1000
