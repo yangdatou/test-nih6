@@ -112,14 +112,14 @@ def get_r_ene(r, dr_max=0.1):
 
         mycas = CASCI(mf, ncas, nele)
         mycas.verbose = 4
-        mc.fcisolver.max_cycle = 200
+        mycas.fcisolver.max_cycle = 200
         mo = mycas.sort_mo(mo_list)
         mycas.kernel(mo)
         e_casci_list.append(mycas.e_tot)
 
         mycas = CASSCF(mf, ncas, nele)
         mycas.verbose = 4
-        mc.fcisolver.max_cycle = 200
+        mycas.fcisolver.max_cycle = 200
         mycas.max_cycle_macro = 200
         mycas.max_cycle_micro = 200
         mo = mycas.sort_mo(mo_list)
