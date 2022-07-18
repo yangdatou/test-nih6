@@ -1,0 +1,36 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.2.46(1)-release
+   args: Using "$@" for setvars.sh arguments: --force
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: intelpython -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vpl -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+rm: cannot remove ‘./data/*’: No such file or directory
+WARN: HOMO -0.959479165400921 == LUMO -0.959479165400918
+ni_3d_idx =  []
+Traceback (most recent call last):
+  File "/home/yangjunjie/test/test-nih6/main.py", line 167, in <module>
+    get_r_ene(1.4, dr_max=0.1)
+  File "/home/yangjunjie/test/test-nih6/main.py", line 102, in get_r_ene
+    assert 1 == 2
+AssertionError
