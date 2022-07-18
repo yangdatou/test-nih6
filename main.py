@@ -98,10 +98,11 @@ def get_r_ene(r, dr_max=0.1):
 
         ni_3d_idx = mol.search_ao_label("Ni 3d")
         tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx]).real
-        mo_list = numpy.where(tmp > 1e-3)[0]
+        mo_list = numpy.where(tmp > 1e-5)[0]
 
         print(numpy.sort(tmp)[::-1])
         print(mo_list)
+        print(mf.mo_energy[mo_list])
 
         ncas = len(mo_list)
         nele = int(sum(mf.mo_occ[mo_list]))
