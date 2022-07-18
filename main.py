@@ -57,7 +57,7 @@ def get_r_ene(r, dr_max=0.1):
 
     for dr in dr_list:
         rz = r + dr
-        rxy = r - dr
+        rxy = r - dr * 0.5
         atoms = f'''
         Ni    0.0000000     0.0000000     0.0000000
         H     0.0000000     0.0000000    {rz: 10.7f}
@@ -75,7 +75,7 @@ def get_r_ene(r, dr_max=0.1):
         mol.verbose = 0
         mol.output = f"./log/r_{r:6.4f}-dr_{dr:6.4f}.log"
         mol.atom = atoms
-        mol.basis = {"H": "sto3g", 'Ni': ni_basis}
+        mol.basis = {"H": "631g*", 'Ni': "lanl2dz"}
         mol.ecp = {'Ni': "lanl2dz"}
         mol.symmetry = 0
         mol.charge = -4
@@ -96,7 +96,10 @@ def get_r_ene(r, dr_max=0.1):
         ww = numpy.einsum("mp,mn->pn", mo, sqrtm(ovlp))
         w2 = ww * ww.conj()
 
-        ni_3d_idx = mol.search_ao_label("Ni 3d")
+        ni_3d_idx = mol.search_ao_label("Ni dx2-y2 dz2")
+        print("ni_3d_idx = ", ni_3d_idx)
+        assert 1 == 2
+
         tmp = numpy.einsum("pn->p", w2[:, ni_3d_idx]).real
         mo_list = numpy.where(tmp > 1e-10)[0]
 
